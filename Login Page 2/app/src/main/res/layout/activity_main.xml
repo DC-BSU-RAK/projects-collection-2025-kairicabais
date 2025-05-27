@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!-- Your views here -->
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Vertical Guideline to split left and right -->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+
+        <!--Text pick your outfit heading-->
+
+        <!-- Left side 4 ImageButtons stacked vertically -->
+        <!--Text and ImageButton 1-->
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="132dp"
+            android:fontFamily="@font/archivo_light_italic"
+            android:text="pick your outfit"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/allison"
+            android:text="lilac Mya Beaded Halter Top"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@id/imageButton1"
+            app:layout_constraintHorizontal_bias="0.453"
+            app:layout_constraintLeft_toLeftOf="@id/imageButton1"
+            app:layout_constraintRight_toRightOf="@id/imageButton1"
+            app:layout_constraintTop_toBottomOf="@id/imageButton1"
+            app:layout_constraintVertical_bias="0.684"
+            tools:ignore="HardcodedText" />
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="95dp"
+            android:layout_height="125dp"
+            android:contentDescription="@string/lilac_Mya_Beaded_Halter_Top"
+            android:scaleType="fitXY"
+            android:src="@drawable/smallpinktop"
+            app:layout_constraintBottom_toTopOf="@id/imageButton3"
+            app:layout_constraintHorizontal_bias="0.27"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/guideline"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.355"
+            tools:ignore="ImageContrastCheck" />
+
+        <!--Text and ImageButton 2-->
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/allison"
+            android:text="Cow Print Ultimate Mini Skirt"
+            app:layout_constraintBottom_toBottomOf="@id/imageButton2"
+            app:layout_constraintLeft_toLeftOf="@id/imageButton2"
+            app:layout_constraintRight_toRightOf="@id/imageButton2"
+            app:layout_constraintTop_toBottomOf="@id/imageButton2"
+            tools:ignore="HardcodedText" />
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="95dp"
+            android:layout_height="125dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/smallcowskirt"
+            android:contentDescription="@string/Cow_Print_Ultimate_Mini_Skirt"
+            app:layout_constraintBottom_toTopOf="@id/imageButton4"
+            app:layout_constraintHorizontal_bias="0.333"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/guideline"
+            app:layout_constraintTop_toBottomOf="@id/imageButton1"
+            app:layout_constraintVertical_bias="0.198" />
+
+        <!--Text and ImageButton 3-->
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/allison"
+            android:text="Shirred Football Baby Red Tee"
+            app:layout_constraintBottom_toBottomOf="@id/imageButton3"
+            app:layout_constraintLeft_toLeftOf="@id/imageButton3"
+            app:layout_constraintRight_toRightOf="@id/imageButton3"
+            app:layout_constraintTop_toBottomOf="@id/imageButton3"
+            tools:ignore="HardcodedText" />
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="95dp"
+            android:layout_height="125dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/smallshirredfootballbabyredtee"
+            android:contentDescription="@string/Shirred_Football_Baby_Red_Tee"
+            app:layout_constraintBottom_toTopOf="@id/imageButton4"
+            app:layout_constraintHorizontal_bias="0.333"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/guideline"
+            app:layout_constraintTop_toBottomOf="@id/imageButton2" />
+
+        <!--Text and ImageButton 4-->
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/allison"
+            android:text="Burgundy Platform Leather Boat Shoes"
+            app:layout_constraintBottom_toBottomOf="@id/imageButton4"
+            app:layout_constraintLeft_toLeftOf="@id/imageButton4"
+            app:layout_constraintRight_toRightOf="@id/imageButton4"
+            app:layout_constraintTop_toBottomOf="@id/imageButton4"
+            tools:ignore="HardcodedText" />
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="95dp"
+            android:layout_height="125dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/smallbrownleathershoes"
+            android:contentDescription="@string/Burgundy_Platform_Leather_Boat_Shoes"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.27"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/guideline"
+            app:layout_constraintTop_toBottomOf="@id/imageButton3" />
+
+        <!-- Right side 4 ImageButtons stacked vertically -->
+        <!--Text and ImageButton 5-->
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/allison"
+            android:text="Red Jelly Shoes"
+            app:layout_constraintBottom_toBottomOf="@id/imageButton5"
+            app:layout_constraintLeft_toLeftOf="@id/imageButton5"
+            app:layout_constraintRight_toRightOf="@id/imageButton5"
+            app:layout_constraintTop_toBottomOf="@id/imageButton5"
+            tools:ignore="HardcodedText" />
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="95dp"
+            android:layout_height="125dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/smalljellyshoes"
+            android:contentDescription="@string/Red_Jelly_Shoes"
+            app:layout_constraintBottom_toTopOf="@id/imageButton7"
+            app:layout_constraintHorizontal_bias="0.706"
+            app:layout_constraintLeft_toRightOf="@id/guideline"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.376" />
+
+        <!--Text and ImageButton 6-->
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/allison"
+            android:text="Black Hole Top"
+            app:layout_constraintBottom_toBottomOf="@id/imageButton6"
+            app:layout_constraintLeft_toLeftOf="@id/imageButton6"
+            app:layout_constraintRight_toRightOf="@id/imageButton6"
+            app:layout_constraintTop_toBottomOf="@id/imageButton6"
+            tools:ignore="HardcodedText" />
+        <ImageButton
+            android:id="@+id/imageButton6"
+            android:layout_width="95dp"
+            android:layout_height="125dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/smallblackholetop"
+            android:contentDescription="@string/Black_Hole_Top"
+            app:layout_constraintBottom_toTopOf="@id/imageButton8"
+            app:layout_constraintHorizontal_bias="0.73"
+            app:layout_constraintLeft_toRightOf="@id/guideline"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageButton5"
+            app:layout_constraintVertical_bias="0.169" />
+
+        <!--Text and ImageButton 7-->
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/allison"
+            android:text="Baby Denim Skirt"
+            app:layout_constraintBottom_toBottomOf="@id/imageButton7"
+            app:layout_constraintLeft_toLeftOf="@id/imageButton7"
+            app:layout_constraintRight_toRightOf="@id/imageButton7"
+            app:layout_constraintTop_toBottomOf="@id/imageButton7"
+            tools:ignore="HardcodedText" />
+        <ImageButton
+            android:id="@+id/imageButton7"
+            android:layout_width="95dp"
+            android:layout_height="125dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/smallbabydenimpants"
+            android:contentDescription="@string/Baby_Denim_Skirt"
+            app:layout_constraintBottom_toTopOf="@id/imageButton8"
+            app:layout_constraintHorizontal_bias="0.709"
+            app:layout_constraintLeft_toRightOf="@id/guideline"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageButton6" />
+
+        <!--Text and ImageButton 8-->
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/allison"
+            android:text="Brown Smoched Mini Skirt"
+            app:layout_constraintBottom_toBottomOf="@id/imageButton8"
+            app:layout_constraintLeft_toLeftOf="@id/imageButton8"
+            app:layout_constraintRight_toRightOf="@id/imageButton8"
+            app:layout_constraintTop_toBottomOf="@id/imageButton8"
+            tools:ignore="HardcodedText" />
+
+        <ImageButton
+            android:id="@+id/imageButton8"
+            android:layout_width="95dp"
+            android:layout_height="125dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/smallbrownminiskirt"
+            android:contentDescription="@string/Brown_Smoched_Mini_Skirt"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.636"
+            app:layout_constraintLeft_toRightOf="@id/guideline"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageButton7" />
+
+        <!-- Bottom center TextView -->
+        <TextView
+            android:id="@+id/textViewKairi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="36dp"
+            android:text="@string/by_kairi"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+
+        <!-- Big ImageView in center -->
+        <ImageView
+            android:id="@+id/centerImageView"
+            android:layout_width="348dp"
+            android:layout_height="867dp"
+            android:layout_margin="8dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/Center_display_image"
+            android:scaleType="fitCenter"
+            android:src="@drawable/fullpinktop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/imageButton5"
+            app:layout_constraintHorizontal_bias="0.465"
+            app:layout_constraintStart_toEndOf="@id/imageButton4"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+
+        <!-- Modal/Tab for instructions at the bottom -->
+        <LinearLayout
+            android:id="@+id/instruction_modal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:elevation="8dp"
+            android:gravity="center_vertical"
+            android:layout_gravity="bottom">
+            <TextView
+                android:id="@+id/instruction_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="instructions: click on the products! "
+                android:textSize="16sp"
+                android:textColor="#333"
+                android:layout_weight="1"
+                tools:ignore="HardcodedText" />
+            <Button
+                android:id="@+id/close_instruction_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Close"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
